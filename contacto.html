@@ -26,17 +26,46 @@
     <main>
         <form>
             <label for="nombreapellido">Nombre y Apellido:</label>
-            <input type="text" id="nombreapellido"> 
+            <input type="text" id="nombreapellido" class="input-padron"> 
             <!-- Siempre que coloco un input de texto tengo que poner un label asociado para indicar a que se refiere ese input -->
 
             <label for="correoelectronico"> Correo Electronico:</label>
-            <input type="text" id="correoelectronico">
+            <input type="text" id="correoelectronico" class="input-padron">
 
             <label for="telefono"> Telefono:</label>
-            <input type="text" id="telefono"> 
+            <input type="text" id="telefono" class="input-padron"> 
+            
+            <label for="mensaje"></label>
+            <textarea cols="70" rows="10" id="mensaje"></textarea class="input-padron">
 
+            <div>
+                <p> ¿Como le gustaria que lo contactemos?  </p>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email </label>
+                    
+        
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Telefono </label>
+                    
+        
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"> WhatsApp </label>
+                    
+                    <!-- colocando el mismo atributo name en cada radio, hace que solo pueda seleccionar uno y no varios a la vez  -->
+               
+            </div>
+
+            <div>
+                <p> En que turno prefiere ser atendido?</p>
+                <select>
+                    <option> Mañana </option>
+                    <option> Tarde </option>
+                    <option> Noche </option>
+                </select>
+            </div>
+            
+            <label class="checkbox"> <input type="checkbox"> Le gustaria recibir novedades de la Barberia Alura?</label>
             <input type="submit" value="Enviar Formulario">
         </form>
+
     </main>
     
         <footer>
