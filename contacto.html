@@ -12,7 +12,7 @@
     
     <header> 
             <div class="caja-uno">
-           <h1> <img src="./img/logo.png"></h1>
+           <h1> <img src="./img/logo.png" alt="Logo de la Barberia Alura"></h1>
            <nav>  <!-- Etiqueta para referirme al panel de navegacion  -->
                <ul >
                    <li> <a href="./index.html">Home</a></li>
@@ -26,50 +26,50 @@
     <main>
         <form>
             <label for="nombreapellido">Nombre y Apellido:</label>
-            <input type="text" id="nombreapellido" class="input-padron"> 
+            <input type="text" id="nombreapellido" class="input-padron" > 
             <!-- Siempre que coloco un input de texto tengo que poner un label asociado para indicar a que se refiere ese input -->
 
             <label for="correoelectronico"> Correo Electronico:</label>
-            <input type="text" id="correoelectronico" class="input-padron">
+            <input type="email" id="correoelectronico" class="input-padron" placeholder="example@hotmail.com">
 
             <label for="telefono"> Telefono:</label>
-            <input type="text" id="telefono" class="input-padron"> 
+            <input type="tel" id="telefono" class="input-padron" placeholder="(+54) XXXX XXXX"> 
             
             <label for="mensaje"></label>
             <textarea cols="70" rows="10" id="mensaje"></textarea class="input-padron">
 
-            <div>
-                <p> ¿Como le gustaria que lo contactemos?  </p>
+            <fieldset>
+                <legend> ¿Como le gustaria que lo contactemos?  </legend>
 
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email </label>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" required > Email </label>
                     
         
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Telefono </label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono" required> Telefono </label>
                     
         
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"> WhatsApp </label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" required checked> WhatsApp </label>
                     
                     <!-- colocando el mismo atributo name en cada radio, hace que solo pueda seleccionar uno y no varios a la vez  -->
                
-            </div>
+            </fieldset>
 
-            <div>
-                <p> En que turno prefiere ser atendido?</p>
+            <fieldset>
+                <legend> ¿En que turno prefiere ser atendido?</legend>
                 <select>
                     <option> Mañana </option>
                     <option> Tarde </option>
                     <option> Noche </option>
                 </select>
-            </div>
+            </fieldset>
             
-            <label class="checkbox"> <input type="checkbox"> Le gustaria recibir novedades de la Barberia Alura?</label>
-            <input type="submit" value="Enviar Formulario">
+            <label class="checkbox"> <input type="checkbox" checked> ¿Le gustaria recibir novedades de la Barberia Alura?</label>
+            <input type="submit" value="Enviar Formulario" class="enviar">
         </form>
 
     </main>
     
         <footer>
-            <img src="./img/logo-blanco.png"/>
+            <img src="./img/logo-blanco.png" alt="Logo de la Barberia Alura"/>
             <p class="copyright"> 	
                 &copy Copyright Barberia Alura - 2022</p>
         </footer>

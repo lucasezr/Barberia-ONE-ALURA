@@ -104,14 +104,14 @@ form {
     margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 
 }
 
-.input-padron {
+.input-padron, form legend {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
@@ -120,4 +120,23 @@ form label, form p {
 
 .checkbox {
     margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /* el segundo parametro ingresado indica a que le quiero aplicar esa transicion*/
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2) /* rotate(360deg); da un giro de 360 mientras aumenta su tamaño en 1.2 */
+    /* para poder ejecutar dos alteraciones en la misma propiedas hay que colocarlas en la misma linea, sino,toma la ultima */
 }
